@@ -1,15 +1,15 @@
 // Set the date we're counting down to
-var countDownDate = new Date('Dec 6, 2099 00:00:00').getTime();
+const countDownDate = new Date('Dec 6, 2099 00:00:00').getTime();
 // Update the count down every 1 second
-var x = setInterval(function() {
+const x = setInterval(function() {
 	// Get todays date and time
-	var now = new Date().getTime();
+	const now = new Date().getTime();
 	// Find the distance between now an the count down date
-	var distance = countDownDate - now;
+	const distance = countDownDate - now;
 	// Time calculations for days, hours, minutes and seconds
-	var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-	var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+	const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+	const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+	const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 	// Output the result in an element with id="demo"
 	document.getElementById('demo').innerHTML = hours + 'h ' + minutes + 'm ' + seconds + 's ';
 	// If the count down is over, write some text
@@ -37,6 +37,6 @@ const quotes = [
   '"You can’t have a better tomorrow if you are thinking about yesterday all the time." - Charles F. Kettering.',
   '"It’s not that we have little time, but more that we waste a good deal of it." - Seneca.', ];
 (function randomQuote() {
-  let randomNumber = Math.floor(Math.random() * quotes.length);
+  const randomNumber = Math.floor(Math.random() * quotes.length);
 	document.getElementById('quote').innerHTML = quotes[randomNumber];
 })();
