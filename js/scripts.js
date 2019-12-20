@@ -21,7 +21,6 @@ const x = setInterval(function() {
 const quotes = [
 	'"The two most powerful warriors are patience and time." – Leo Tolstoy, War and Peace.',
 	'"Time is money." – Benjamin Franklin.',
-	'"Time waits for no one." – Folklore.',
 	'"Better three hours too soon than a minute too late." – William Shakespeare.',
 	'"Lost time is never found again." – Benjamin Franklin.',
 	'"Time is the most valuable thing a man can spend." – Theophrastus.',
@@ -34,7 +33,8 @@ const quotes = [
 	'"Men talk of killing time, while time quietly kills them." - Dion Boucicault.',
 	'"There is one kind of robber whom the law does not strike at, and who steals what is most precious to men: time." - Napoleon I.',
 	'"You can’t have a better tomorrow if you are thinking about yesterday all the time." - Charles F. Kettering.',
-	'"It’s not that we have little time, but more that we waste a good deal of it." - Seneca.'
+	'"It’s not that we have little time, but more that we waste a good deal of it." - Seneca.',
+	'"Time stops for no one, and death won\'t wait" - Xavier Marcus Duncan.'
 ];
 
 (function randomQuote() {
